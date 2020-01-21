@@ -79,4 +79,4 @@ INSERT INTO purchases (id_client, id_product, id_bill, quantity) VALUES (4, 2, 9
 INSERT INTO purchases (id_client, id_product, id_bill, quantity) VALUES (4, 4, 10, 1);
 
 SELECT id, name FROM clients WHERE id IN (SELECT id_client FROM bills WHERE total_price > 100000);
-SELECT COUNT(id) FROM products WHERE name='Producto6';
+SELECT COUNT(id_product) FROM purchases WHERE id_product=7;
