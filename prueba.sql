@@ -77,3 +77,5 @@ INSERT INTO purchases (id_client, id_product, id_bill, quantity) VALUES (4, 5, 7
 INSERT INTO purchases (id_client, id_product, id_bill, quantity) VALUES (4, 7, 8, 3);
 INSERT INTO purchases (id_client, id_product, id_bill, quantity) VALUES (4, 2, 9, 4);
 INSERT INTO purchases (id_client, id_product, id_bill, quantity) VALUES (4, 4, 10, 1);
+
+SELECT id, name FROM clients WHERE id IN (SELECT id_client FROM bills WHERE total_price > 100000);
